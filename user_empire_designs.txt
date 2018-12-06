@@ -10,8 +10,6 @@
 		adjective="Cynn"
 		name_list="AVI3"
 		trait="trait_decadent"
-		trait="trait_repugnant"
-		trait="trait_talented"
 		trait="trait_nomadic"
 		trait="trait_adaptive"
 	}
@@ -26,7 +24,7 @@
 		trait="trait_strong"
 		trait="trait_agrarian"
 		trait="trait_slow_learners"
-		trait="trait_repugnant"
+		trait="trait_fleeting"
 	}
 	name="Cynn Imperium"
 	adjective="Cynn"
@@ -71,8 +69,8 @@
 	ethic="ethic_xenophobe"
 	ethic="ethic_militarist"
 	civics={
-		"civic_slaver_guilds"
 		"civic_syncretic_evolution"
+		"civic_aristocratic_elite"
 	}
 }
 "United Uthonian Concordat"
@@ -87,7 +85,6 @@
 		adjective="Uthonian"
 		name_list="MOL1"
 		trait="trait_charismatic"
-		trait="trait_communal"
 		trait="trait_weak"
 		trait="trait_natural_sociologists"
 	}
@@ -211,16 +208,17 @@
 		plural="Lavii"
 		adjective="Lavian"
 		name_list="PLANT"
-		trait="trait_extremely_adaptive"
 		trait="trait_sedentary"
 		trait="trait_slow_breeders"
-		trait="trait_enduring"
 		trait="trait_solitary"
+		trait="trait_venerable"
+		trait="trait_conformists"
 	}
 	name="The Tower"
 	adjective="Tower"
-	authority="auth_imperial"
-	government="gov_irenic_monarchy"
+	authority="auth_oligarchic"
+	government="gov_holy_tribunal"
+	advisor_voice_type="l_spiritualist"
 	planet_name="The Keep"
 	planet_class="pc_alpine"
 	system_name="The Tower"
@@ -260,10 +258,11 @@
 	room="personality_decadent_hierarchy_room"
 	spawn_enabled=yes
 	ethic="ethic_xenophobe"
-	ethic="ethic_fanatic_pacifist"
+	ethic="ethic_pacifist"
+	ethic="ethic_spiritualist"
 	civics={
 		"civic_inwards_perfection"
-		"civic_efficient_bureaucracy"
+		"civic_exalted_priesthood"
 	}
 }
 "Karabnar Purifiers"
@@ -343,6 +342,7 @@
 		trait="trait_venerable"
 		trait="trait_sedentary"
 		trait="trait_slow_breeders"
+		trait="trait_talented"
 	}
 	name="Divine Valmennax Order"
 	adjective="Valmennaxian"
@@ -468,7 +468,7 @@
 		trait="trait_natural_physicists"
 		trait="trait_enduring"
 		trait="trait_conservational"
-		trait="trait_solitary"
+		trait="trait_deviants"
 	}
 	name="Ashen Confederacy"
 	adjective="Ashen"
@@ -531,7 +531,7 @@
 		trait="trait_decadent"
 		trait="trait_very_strong"
 		trait="trait_intelligent"
-		trait="trait_slow_breeders"
+		trait="trait_sedentary"
 	}
 	name="Shining Pearl of Rixi"
 	adjective="Rixian"
@@ -540,8 +540,8 @@
 	advisor_voice_type="l_xenophobe"
 	planet_name="Rix"
 	planet_class="pc_alpine"
-	system_name="Rixdar"
-	initializer=""
+	system_name="Rixi"
+	initializer="custom_starting_init_05"
 	graphical_culture="avian_01"
 	city_graphical_culture="avian_01"
 	empire_flag={
@@ -602,7 +602,7 @@
 	adjective="Veltarian"
 	authority="auth_democratic"
 	government="gov_citizen_republic"
-	advisor_voice_type="l_the_diplomat"
+	advisor_voice_type="l_the_soldier"
 	planet_name="Veltar"
 	planet_class="pc_ocean"
 	system_name="Vel"
@@ -658,7 +658,6 @@
 		trait="trait_industrious"
 		trait="trait_intelligent"
 		trait="trait_repugnant"
-		trait="trait_slow_breeders"
 	}
 	name="Purity"
 	adjective="The Pure"
@@ -668,9 +667,9 @@
 	planet_name="Shine"
 	planet_class="pc_arctic"
 	system_name="Purity"
-	initializer=""
-	graphical_culture="mammalian_01"
-	city_graphical_culture="mammalian_01"
+	initializer="custom_starting_init_02"
+	graphical_culture="molluscoid_01"
+	city_graphical_culture="reptilian_01"
 	empire_flag={
 		icon={
 			category="pirate"
@@ -721,7 +720,6 @@
 		trait="trait_hive_mind"
 		trait="trait_traditional"
 		trait="trait_charismatic"
-		trait="trait_conservational"
 		trait="trait_nonadaptive"
 		trait="trait_strong"
 	}
@@ -845,11 +843,9 @@
 		adjective="Omni-servitor"
 		name_list="MACHINE3"
 		trait="trait_machine_unit"
-		trait="trait_robot_superconductive"
+		trait="trait_robot_repurposed_hardware"
+		trait="trait_robot_efficient_processors"
 		trait="trait_robot_bulky"
-		trait="trait_robot_luxurious"
-		trait="trait_robot_emotion_emulators"
-		trait="trait_robot_enhanced_memory"
 	}
 	secondary_species={
 		class="MAM"
@@ -859,10 +855,9 @@
 		adjective="Oklarran"
 		name_list="MAM2"
 		trait="trait_deviants"
-		trait="trait_weak"
-		trait="trait_intelligent"
 		trait="trait_rapid_breeders"
 		trait="trait_communal"
+		trait="trait_weak"
 	}
 	name="Omni-servitor Enclave"
 	adjective="Omni-servitor"
@@ -874,7 +869,7 @@
 	system_name="Zero"
 	initializer=""
 	graphical_culture="humanoid_01"
-	city_graphical_culture="reptilian_01"
+	city_graphical_culture="mammalian_01"
 	empire_flag={
 		icon={
 			category="spherical"
@@ -924,8 +919,7 @@
 		trait="trait_robot_custom_made"
 		trait="trait_robot_emotion_emulators"
 		trait="trait_robot_luxurious"
-		trait="trait_robot_logic_engines"
-		trait="trait_robot_superconductive"
+		trait="trait_robot_enhanced_memory"
 	}
 	secondary_species={
 		class="MAM"
@@ -941,7 +935,7 @@
 		trait="trait_slow_breeders"
 	}
 	name="Serene Cat Pamperers"
-	adjective="Pamperers"
+	adjective="Pamperer"
 	authority="auth_machine_intelligence"
 	government="gov_machine_servitor"
 	planet_name="Kenjor Prime"
@@ -1011,7 +1005,7 @@
 	system_name="Light"
 	initializer=""
 	graphical_culture="avian_01"
-	city_graphical_culture="humanoid_01"
+	city_graphical_culture="avian_01"
 	empire_flag={
 		icon={
 			category="ornate"
@@ -1125,6 +1119,7 @@
 		trait="trait_conservational"
 		trait="trait_agrarian"
 		trait="trait_slow_breeders"
+		trait="trait_natural_sociologists"
 	}
 	name="Ogi-Nollox Utopia"
 	adjective="Ogi-Nollox"
@@ -1169,70 +1164,8 @@
 	ethic="ethic_egalitarian"
 	ethic="ethic_fanatic_pacifist"
 	civics={
-		"civic_beacon_of_liberty"
 		"civic_agrarian_idyll"
-	}
-}
-"Alari Union"
-={
-	key="Alari Union"
-	ship_prefix=""
-	species={
-		class="MAM"
-		portrait="mam10"
-		name="Alari"
-		plural="Alarii"
-		adjective="Alarian"
-		name_list="MAM1"
-		trait="trait_weak"
-		trait="trait_communal"
-		trait="trait_industrious"
-	}
-	name="Alari Union"
-	adjective="Alarian"
-	authority="auth_democratic"
-	government="gov_moral_democracy"
-	advisor_voice_type="l_egalitarian"
-	planet_name="Alar"
-	planet_class="pc_savannah"
-	system_name="Alar'Knor"
-	initializer="custom_starting_init_04"
-	graphical_culture="humanoid_01"
-	city_graphical_culture="reptilian_01"
-	empire_flag={
-		icon={
-			category="human"
-			file="flag_human_3.dds"
-		}
-		background={
-			category="backgrounds"
-			file="diagonal.dds"
-		}
-		colors={
-			"yellow"
-			"dark_blue"
-			"null"
-			"null"
-		}
-	}
-	ruler={
-		gender=female
-		name="Dimi B'Donag"
-		portrait="mam10"
-		texture=5
-		hair=0
-		clothes=1
-	}
-	spawn_as_fallen=no
-	ignore_portrait_duplication=no
-	room="personality_federation_builders_room"
-	spawn_enabled=yes
-	ethic="ethic_egalitarian"
-	ethic="ethic_pacifist"
-	ethic="ethic_materialist"
-	civics={
-		"civic_idealistic_foundation"
-		"civic_beacon_of_liberty"
+		"civic_environmentalist"
 	}
 }
 "Villar Sanctuary"
@@ -1290,7 +1223,7 @@
 	spawn_as_fallen=no
 	ignore_portrait_duplication=no
 	room="personality_migrating_flock_room"
-	spawn_enabled=always
+	spawn_enabled=yes
 	ethic="ethic_xenophobe"
 	ethic="ethic_pacifist"
 	ethic="ethic_materialist"
@@ -1420,5 +1353,79 @@
 	civics={
 		"civic_machine_unitary_cohesion"
 		"civic_machine_introspective"
+	}
+}
+"Blorg Commonality"
+={
+	key="Blorg Commonality"
+	ship_prefix="ISS"
+	species={
+		class="MACHINE"
+		portrait="sd_mol_robot"
+		name="Blorg"
+		plural="Blorg"
+		adjective="Blorg"
+		name_list="HUMAN1"
+		trait="trait_machine_unit"
+		trait="trait_robot_uncanny"
+		trait="trait_robot_power_drills"
+	}
+	secondary_species={
+		class="FUN"
+		portrait="fun12"
+		name="Blorg"
+		plural="Blorg"
+		adjective="Blorg"
+		name_list="HUMAN1"
+		trait="trait_cybernetic"
+		trait="trait_repugnant"
+		trait="trait_communal"
+		trait="trait_adaptive"
+		trait="trait_nomadic"
+	}
+	name="Blorg Commonality"
+	adjective="Blorg"
+	authority="auth_machine_intelligence"
+	government="gov_machine_assimilator"
+	planet_name="Blorg Prime"
+	planet_class="pc_tropical"
+	system_name="Blorg"
+	initializer="custom_starting_init_06"
+	graphical_culture="fungoid_01"
+	city_graphical_culture="fungoid_01"
+	empire_flag={
+		icon={
+			category="blocky"
+			file="flag_blocky_11.dds"
+		}
+		background={
+			category="backgrounds"
+			file="stripe.dds"
+		}
+		colors={
+			"green"
+			"red_orange"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Jodie Scott"
+		portrait="sd_mol_robot"
+		texture=1
+		hair=0
+		clothes=0
+		ruler_title="Chief Friendmaker"
+		leader_class="ruler"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_federation_builders_room"
+	spawn_enabled=yes
+	ethic="ethic_gestalt_consciousness"
+	civics={
+		"civic_machine_assimilator"
+		"civic_machine_predictive_analysis"
 	}
 }
